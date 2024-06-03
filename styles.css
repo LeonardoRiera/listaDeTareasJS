@@ -1,0 +1,136 @@
+/* estilos grales  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Yanone Kaffeesatz", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 0;
+    background: url(img/marFondo.jpg) no-repeat /* center */ center/cover;
+}
+
+
+/* contenedores */
+.contenedor {
+    width: 700px;
+    min-height: 500px;
+    background-color: white;
+    padding: 40px;
+    border: 5px solid black;
+    border-radius: 20px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+
+
+/* titulo */
+
+h1 {
+    font-size: 50px;
+    font-weight: bold;
+
+}
+
+/* input */
+
+input {
+    width: 80%;
+    height: 50px;
+    font-size: 25px;
+    margin: 20px;
+    padding: 10px;
+    border: 4px solid #404040;
+    border-radius: 10px;
+}
+
+
+/* boton */
+
+button {
+    width: 150px;
+    height: 60px;
+    padding: 10px;
+    color: white;
+    background-color: #1312a8;
+    font-size: 22px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+
+/* lista de tareas */
+
+#lista-de-tareas {
+    width: 80%;
+    margin-top: 20px;
+}
+
+/* tareas */
+
+.tarea {
+    width: 100%;
+    min-height: 70px;
+    font-size: 25px;
+    padding: 10px;
+    margin-top: 10px;
+    color: white;
+    background-color: #407ba6;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+
+/* tarea completada */
+
+.tarea.completada {      /* esto es si un elemento tiene estas dos clases */
+    text-decoration: line-through;
+    background-color: black;
+    border: none;
+
+}
+
+
+.tarea p {
+    max-width: 350px;
+}
+
+
+/* iconos */
+
+i {
+    margin: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+icono-completar {
+    color: rgb(0, 255, 0);
+}
+
+icono-eliminar {
+    color: rgb(255, 255, 255);
+}
+
+
+
+.icono-completar:hover,
+.icono-eliminar:hover {
+    background-color: rgba(255, 255, 255, 0.518);
+}
